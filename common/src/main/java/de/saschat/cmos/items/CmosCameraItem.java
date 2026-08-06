@@ -130,7 +130,8 @@ public class CmosCameraItem extends CameraItem {
 
     @Override
     public int calculateCooldownAfterShot(ItemStack stack, CaptureParameters captureParameters) {
-        return 100;
+        // TODO: make externally configurable
+        return 1;
     }
 
     @Override
