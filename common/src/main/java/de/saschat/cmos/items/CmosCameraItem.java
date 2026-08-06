@@ -87,7 +87,8 @@ public class CmosCameraItem extends CameraItem {
         super(properties);
     }
 
-    private static FilmProperties fp = new FilmProperties(ExposureType.COLOR, Optional.of(128), ColorPalettes.DEFAULT, DitherMode.CLEAN, FilmStyle.EMPTY);
+    // TODO: make externally configurable
+    private static FilmProperties fp = new FilmProperties(ExposureType.COLOR, Optional.of(1024), ColorPalettes.DEFAULT, DitherMode.CLEAN, FilmStyle.EMPTY);
     @Override
     public @NotNull FilmProperties getFilmProperties(ItemStack stack) {
         return fp;
